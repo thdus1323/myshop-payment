@@ -1,5 +1,5 @@
-
 {{> layout/header}}
+
 <section class="main__slider">
     <h2 class="main__slider-title">MY SHOP</h2>
     <span class="main__slider-btn">
@@ -8,7 +8,7 @@
     <div class="main__slider-container">
         <span class="main__slider-text">STYLE IN EVERY DAY</span>
         <div class="main__slider-image-container">
-            <img class="main__slider-image" src="static/img/메인사진.webp" alt="main silder image">
+            <img class="main__slider-image" src="../../img/메인사진.webp" alt="main silder image">
         </div>
         <span class="main__slider-text">FOR SPRING SET-UP</span>
     </div>
@@ -25,13 +25,14 @@
     <span class="main__product-list-sub-title">이달의 베스트 상품이에요</span>
     <!-- 베스트 상품1 시작 -->
     <div class="main__product-list-sub-container">
+        <a href="/payment">
         <article class="main__product-list-article">
             <div class="main__article-img-container">
-                <img class="main__article-img" src="./assets/귤2.jpg">
+                <img class="main__article-img product-list-img" src="../../img/귤.jpg">
             </div>
             <div class="main__article-container">
                 <h4 class="main__article-product-name">
-                    고당도 귤
+                    고당도 귤</h4>
             </div>
             <div class="main__article-container">
                             <span class="main__article-product-description">
@@ -43,11 +44,13 @@
                 <small class="main__article-previous-price">2,3000원</small>
                 <span class="main__article-discount-rate">40%</span>
             </div>
-            </h4>
         </article>
+        </a>
+
+        <a href="/payment">
         <article class="main__product-list-article">
             <div class="main__article-img-container">
-                <img class="main__article-img" src="./assets/딸기.jpeg">
+                <img class="main__article-img product-list-img" src="../../img/딸기.jpeg">
             </div>
             <div class="main__article-container">
                 <h4 class="main__article-product-name">
@@ -65,9 +68,12 @@
                 <span class="main__article-discount-rate">40%</span>
             </div>
         </article>
+        </a>
+
+        <a href="/payment">
         <article class="main__product-list-article">
             <div class="main__article-img-container">
-                <img class="main__article-img" src="./assets/사과.jpeg">
+                <img class="main__article-img product-list-img" src="../../img/사과.jpeg">
             </div>
             <div class="main__article-container">
                 <h4 class="main__article-product-name">
@@ -85,9 +91,12 @@
                 <span class="main__article-discount-rate">40%</span>
             </div>
         </article>
+        </a>
+
+        <a href="/payment">
         <article class="main__product-list-article">
             <div class="main__article-img-container">
-                <img class="main__article-img" src="./assets/키위.jpg">
+                <img class="main__article-img product-list-img" src="../../img/키위.jpg">
             </div>
             <div class="main__article-container">
                 <h4 class="main__article-product-name">
@@ -105,10 +114,9 @@
                 <span class="main__article-discount-rate">40%</span>
             </div>
         </article>
+        </a>
     </div>
 
 </section>
-{{> layout/footer}}
 
-</body>
-</html>
+{{> layout/footer}}
