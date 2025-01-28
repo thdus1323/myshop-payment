@@ -1,42 +1,57 @@
-/*.main__product-list-article{*/
-/*    display: flex;*/
-/*}*/
 
-.main__article-img-container{
-    width: 100%;
+.product-list-detail--layout{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.product-item{
+    width: 330px;
+    height: 260px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+.product-item__img--detail{
+    flex: 1; /* 자동으로 남은 공간 차지 */
+    max-width: 50%; /* 최대 50%까지만 차지 */
     height: 400px;
     overflow: hidden;
     object-fit: cover;
-
-}
-.main__product-detail{
-    display: flex;
-    justify-content: center;
-
 }
 
 .main__product-text{
     display: flex;
     flex-direction: column;
     margin: 20px;
-    position: relative;
 }
 
-.main__product-title{
+.quantity-container{
+
+}
+
+.product-item__title--main{
     font-weight: 600;
     font-size: 30px;
     margin-bottom: 10px;
 }
 
-.main__product-text span,
-.main__product-price span,
-.main__product-quantity span{
-    margin-bottom: 20px;
+.payment-btn{
+    background-color: #FFDE59;
+    color: black;
+    font-size: 18px;
+    padding: 10px 0;
+    border: none;
+    margin: 30px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+
+    width: 100%;
 }
 
-main__product-title{
-    position: absolute;
-    bottom: 10px;
-    margin-right: -330px;
-
-}

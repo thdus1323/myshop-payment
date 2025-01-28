@@ -1,110 +1,89 @@
-.main__product-list{
+.product-list{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.main__product-list-title{
+.product-list__title{
     font-size: 25px;
     font-weight: 600;
     margin-bottom: 10px;
 }
 
-.main__product-list-sub-title{
+.product-list__sub-title{
     font-size: 17px;
     color: rgba(0, 0, 0, 0.7);
 }
 
-.main__product-list-sub-container{
+.product-list__container{
     display: flex;
     margin: 40px 0;
 
 }
 
-.main__product-list-article{
+.product-item{
     width: 330px;
     height: 550px;
     overflow: hidden;
     margin: 0 20px;
     transition: box-shadow 0.2s ease-in-out;
     /* border: 1px solid red; */
+
 }
 
-.main__product-list-article:hover{
+.product-item:hover{
     cursor: pointer;
     box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
 }
 
-.main__product-list-article:hover .product-list-img{
+.product-item:hover .product-item__img--1{
     transform: scale(1.1);
 }
 
-.main__article-img-container{
+.product-item__img{
     width: 100%;
     height: 400px;
     overflow: hidden;
 }
 
-.main__article-img{
+.product-item__img--1{
     width: 100%;
     height: 100%;
     object-fit: cover;
     transition: transform 0.2s ease-in-out;
 }
 
-.main__article-container{
+.product-item__sub-title{
     display: flex;
     margin: 10px 0;
+
 }
 
-.main__article-color-item{
-    width: 10px;
-    height: 10px;
-    border-radius: 100%;
-    /* border: 1px solid black; */
-    margin-right: 5px;
-}
-
-.main__article-color-item--01{
-    outline: 1px solid rgba(0, 0, 0, 0.2);
-}
-
-.main__article-color-item--02{
-    background-color: #e1cba4;
-}
-
-.main__article-color-item--03{
-    background-color: #7d6555;
-}
-
-.main__article-color-item--04{
-    background-color: #9e9e9e;
-}
-
-.main__article-color-item--05{
-    background-color: #202b4d;
-}
-
-.main__article-product-name{
+.product-item__title--main{
     font-weight: 600;
+    color: black;
 }
 
-.main__article-product-description{
+.product-item__description{
     font-size: 15px;
     color: rgba(0, 0, 0, 0.7);
 }
 
-.main__article-total-price{
+.product-item__price--current{
     font-weight: 600;
     margin-right: 7px;
 }
 
-.main__article-previous-price{
+.product-item__price--original{
     color: rgba(0, 0, 0, 0.7);
     text-decoration: line-through;
     margin-right: 7px;
 }
 
-.main__article-discount-rate{
+.product-item__price--discount{
     color: red;
+}
+
+a {
+    text-decoration: none;
 }
